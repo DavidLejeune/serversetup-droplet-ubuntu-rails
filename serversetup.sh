@@ -51,3 +51,29 @@ read -p "Press enter to continue"
 echo ""
 
 
+echo ">>> creating user for rails application <<<"
+user='gingerbird'
+echo "> testing user existence"
+if [ $(getent passwd $user) ] ; then
+        echo user $user exists
+else
+        echo user $user doesn\'t exists
+        echo "> creating user"
+        sudo adduser $user
+        if [ $(getent passwd $user) ] ; then
+            echo user $user exists now !
+        fi
+fi
+read -p "Press enter to continue"
+echo ""
+
+
+
+
+
+
+
+
+
+
+
