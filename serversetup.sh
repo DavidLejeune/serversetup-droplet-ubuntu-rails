@@ -1,4 +1,12 @@
 #!/bin/bash --login
+clear
+echo "========================================================================"
+echo "Install script to deploy Rails app on Ubuntu 18.04 digital ocean droplet"
+echo "========================================================================"
+echo ""
+sleep 2
+
+
 echo ">>> RVM install <<<"
 if hash rvm 2>/dev/null; then
     echo "RVM already installed"
