@@ -11,7 +11,8 @@ else
     echo "Please exit out of the ssh connection , reconnect and run script again"
     exit
 fi
-read -p "Press enter to continue"
+sleep 1
+#read -p "Press enter to continue"
 echo ""
 
 
@@ -25,7 +26,8 @@ else
     echo "> show ruby version"
     ruby -v
 fi
-read -p "Press enter to continue"
+sleep 1
+#read -p "Press enter to continue"
 echo ""
 
 
@@ -35,7 +37,8 @@ if hash bundler 2>/dev/null; then
 else
     gem install bundler
 fi
-read -p "Press enter to continue"
+sleep 1
+#read -p "Press enter to continue"
 echo ""
 
 
@@ -47,7 +50,8 @@ else
     gem install rails
     rails -v
 fi
-read -p "Press enter to continue"
+sleep 1
+#read -p "Press enter to continue"
 echo ""
 
 
@@ -64,7 +68,8 @@ else
             echo user $user exists now !
         fi
 fi
-read -p "Press enter to continue"
+sleep 1
+#read -p "Press enter to continue"
 echo ""
 
 
